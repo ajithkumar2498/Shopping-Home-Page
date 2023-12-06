@@ -1,9 +1,21 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import Navbar from './components/Navbar.jsx'
 import Productscard from './components/Productscard.jsx';
-// import briyani from './components/briyani.jpg'
+// import briyani from './briyani.jpg'
+
 
 function App() {
+  // useEffect(()=>{ 
+  //   const importImages = async () => {
+  //     const imageContext = import.meta.glob("./images/*");
+  //     console.log(imageContext);
+  //     for (const path in imageContext) {
+  //       imageContext[path]().then((mod) => {
+  //         setImagePaths([...imagePaths, mod.default]);
+  //       });
+  //     }
+  //   };
+  // })
    let [cart,setCart]=useState(0)
    let products=[
     {
