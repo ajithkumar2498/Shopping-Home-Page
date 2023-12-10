@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 
-function Productscard({cart,setCart,product}){
+
+function Productscard({cart,setCart,product,image}){
     let[toggle,setToggle]=useState(true)
 return <>
 
@@ -9,7 +10,7 @@ return <>
     
     <div className="badge bg-dark text-white position-absolute" style={{top: "0.5rem", right: "0.5rem"}}>Sale</div>
     
-    <img className="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+    <img className="card-img-top" src={product.image} alt="..." />
     
     <div className="card-body p-4">
         <div className="text-center">

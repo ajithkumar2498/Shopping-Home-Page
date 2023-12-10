@@ -1,56 +1,52 @@
-import React,{useEffect, useState} from 'react';
+import React,{ useState} from 'react';
 import Navbar from './components/Navbar.jsx'
 import Productscard from './components/Productscard.jsx';
-// import briyani from './briyani.jpg'
 
 
 function App() {
-  // useEffect(()=>{ 
-  //   const importImages = async () => {
-  //     const imageContext = import.meta.glob("./images/*");
-  //     console.log(imageContext);
-  //     for (const path in imageContext) {
-  //       imageContext[path]().then((mod) => {
-  //         setImagePaths([...imagePaths, mod.default]);
-  //       });
-  //     }
-  //   };
-  // })
+ 
    let [cart,setCart]=useState(0)
    let products=[
     {
+      image:"../src/assets/images/briyani.jpg",
       name:"biryani",
       price: 5,
     },
     {
+      image:"../src/assets/images/meals.jpeg",
       name:"Meals",
       price: 3,
     },
     {
+      image:"../src/assets/images/italian-pizza.jpg",
       name:"Italian Pizza",
       price: 2.5,
     },
     {
+      image:"../src/assets/images/parotta.jpg",
       name:"Parotta",
       price: 1,
     },
     {
+      image:"../src/assets/images/sharwarma.jpg",
       name:"shawarma",
       price: 1,
     },
     {
-      name:"Chicken Sandwitch",
+      image:"../src/assets/images/chicken-sandwich.jpg",
+      name:"Chicken Sandwich",
       price: 2,
     },
     {
+      image:"../src/assets/images/gobi-manchurian.jpg",
       name:"Gobi Manchurian",
       price: 2,
     },
     {
-    
+      image:"../src/assets/images/dosa.jpg",
       name:"Dosa",
       price: 1.5,
-    },
+    }
    ]
   return (
     <>
